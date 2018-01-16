@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Максим Акимов](https://up.htmlacademy.ru/adaptive/13/user/352625).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Сергеев](https://htmlacademy.ru/profile/siebensieben).
 
 ---
 
