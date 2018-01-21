@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Конкурс</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo page-header__logo--active">
+        <img class="page-header__logo-image" src="http://placehold.it/80x30" width="80px" height="30px" alt="Логотип Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a>Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Конкурс</h1>
+      <section class="contest">
+        <h2 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <p class="contest__description">
+          Поделитесь своей историей и получите шанс выиграть ценный приз - 10000 миль на вашу бонусную карту!
+        </p>
+        <form class="contest__form" action="https://echo.htmlacademy.ru">
+          <section class="contest__name name-info">
+            <h3 class="visually-hidden">Введите фамилию, имя, отчество</h3>
+            <ul class="name-info__list">
+              <li class="name-info__item name-info__item--second-name">
+                <label for="second-name">Фамилия:</label>
+                <input type="text" name="second-name" id="second-name" placeholder="Укажите фамилию *" required>
+              </li>
+              <li class="name-info__item name-info__item--first-name">
+                <label for="first-name">Имя:</label>
+                <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
+              </li>
+              <li class="name-info__item name-info__item--patronymic">
+                <label for="patronymic">Отчество:</label>
+                <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </section>
+          <section class="contest__achievements achievements-info">
+            <h3 class="contest__title">Ваши безбашенные достижения в путешествии</h3>
+            <ul class="achievements-info__list">
+              <li class="achievements-info__item">
+                <input type="checkbox" name="shark" id="shark" checked>
+                <label for="shark">Сделал селфи с акулой</label>
+              </li>
+              <li class="achievements-info__item">
+                <input type="checkbox" name="beach" id="beach" checked>
+                <label for="beach">Обгорел на пляже</label>
+              </li>
+              <li class="achievements-info__item">
+                <input type="checkbox" name="norris" id="norris">
+                <label for="norris">Видел Чака Норриса</label>
+              </li>
+              <li class="achievements-info__item">
+                <input type="checkbox" name="souvenirs" id="souvenirs">
+                <label for="souvenirs">Накупил сувениров</label>
+              </li>
+              <li class="achievements-info__item">
+                <input type="checkbox" name="tower" id="tower" checked>
+                <label for="tower">Удержал башню</label>
+              </li>
+              <li class="achievements-info__item">
+                <input type="checkbox" name="hotel" id="hotel">
+                <label for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </section>
+          <section class="contest__contacts contacts-info">
+            <h3 class="visually-hidden">Введите контактные данные</h3>
+            <ul class="contacts-info__list">
+              <li class="contacts-info__item">
+                <label for="telephone">Номер телефона</label>
+                <input type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="contacts-info__item">
+                <label for="email">Адрес почты</label>
+                <input type="tel" name="email" id="email" placeholder="Введите почту *" required>
+              </li>
+            </ul>
+          </section>
+          <section class="contest__app app-info">
+            <h3 class="app-info__title">С каким приложением путешествовали?</h3>
+            <ul class="app-info__list">
+              <li class="app-info__item">
+                <input type="radio" name="ios" id="ios" checked>
+                <label for="ios">Pink для iOS</label>
+              </li>
+              <li class="app-info__item">
+                <input type="radio" name="android" id="android">
+                <label for="android">Pink на Android</label>
+              </li>
+              <li class="app-info__item">
+                <input type="radio" name="windows" id="windows">
+                <label for="windows">Windows Phone</label>
+              </li>
+            </ul>
+          </section>
+          <section class="contest__emotions emotions-info">
+            <h3 class="emotions-info__title">Опишите свои эмоции</h3>
+            <textarea name="emotions" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </section>
+          <button class="contest__submit" type="submit">Отправить форму</button>
+          <small class="contest__legend"><sup>*</sup> — Обязательные поля</small>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a>
+        <img class="page-footer__logo-image" src="http://placehold.it/160x70" width="160px" height="70px" alt="Логотип Pink">
+      </a>
+      <section class="social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <a class="social__btn social__btn--vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
+        <a class="social__btn social__btn--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+        <a class="social__btn social__btn--inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
+      </section>
+      <section class="developed-by">
+        <span class="developed-by__title">Разработано</span>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="developed-by__link"><span class="visually-hidden">HTML Academy</span></a>
+      </section>
+    </footer>
+  </body>
+</html>
