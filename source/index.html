@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo page-header__logo--active">
-        <img class="page-header__logo-image" src="http://placehold.it/80x30" width="80px" height="30px" alt="Логотип Pink">
+        <img class="page-header__logo-image" src="http://placehold.it/80x30" width="80" height="30" alt="Логотип Pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -30,12 +30,11 @@
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Pink</h1>
       <section class="download">
-        <h2 class="download__title visually-hidden">Скачать приложение</h2>
+        <h2 class="download__title">
+          <a href="https://itunes.apple.com/ru/genre/ios/id36?mt=8" >Скачать приложение</a>
+        </h2>
         <p class="download__phrase">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         <ul class="download__list">
-          <li class="download__item download__item--default">
-            <a href="https://itunes.apple.com/ru/genre/ios/id36?mt=8" >Скачать приложение</a>
-          </li>
           <li class="download__item">
             <a href="https://itunes.apple.com/ru/genre/ios/id36?mt=8" >Apple</a>
           </li>
@@ -150,28 +149,27 @@
           </p>
         </div>
       </section>
-    </main>
-    <footer class="page-footer">
       <section class="feedback">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <span class="feedback__phrase">Остались вопросы? Свяжитесь с нами!</span>
-        <div class="telephone__wrapper">
-          <span class="feedback__phone-us">Звоните:</span>
-          <a class="feedback__phone" href="tel:+78125556666">+7(812)555-66-66</a>
+        <span class="feedback__title">Остались вопросы? Свяжитесь с нами!</span>
+        <div class="feedback__wrapper">
+          <span class="feedback__phrase">Звоните:</span>
+          <a class="feedback__link" href="tel:+78125556666">+7(812)555-66-66</a>
         </div>
-        <div class="email__wrapper">
-          <span class="feedback__email-us">Пишите:</span>
-          <a class="feedback__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <div class="feedback__wrapper">
+          <span class="feedback__phrase">Пишите:</span>
+          <a class="feedback__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
-        <div class="email__wrapper">
-          <span class="feedback__address-us">Приехжайте в гости:</span>
-          <span class="feedback__address">ул. Большая Конюшенная, 19/8</span>
+        <div class="feedback__wrapper">
+          <span class="feedback__phrase">Приехжайте в гости:</span>
+          <span class="feedback__link">ул. Большая Конюшенная, 19/8</span>
         </div>
         <span></span>
       </section>
       <section class="map">
         <!-- тег iframe-->
       </section>
-    </footer>
+    </main>
+    <footer></footer>
   </body>
 </html>
