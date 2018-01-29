@@ -3,34 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Конкурс</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo page-header__logo--active">
-        <img class="page-header__logo-image" src="http://placehold.it/80x30" width="80" height="30" alt="Логотип Pink">
+    <header class="page-header container">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
-            <a>Конкурс</a>
+            <a class="main-nav__link main-nav__link--active" >Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">HTML Academy</a>
+            <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <section class="contest">
-        <p class="contest__description">
+      <section class="page-main__title-wrapper container">
+        <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
+      <section class="container">
+        <p class="phrase">
           Поделитесь своей историей и получите шанс выиграть ценный приз - 10000 миль на вашу бонусную карту!
         </p>
         <form class="sign-in" action="https://echo.htmlacademy.ru">
@@ -38,16 +41,16 @@
             <h2 class="visually-hidden">Введите фамилию, имя, отчество</h2>
             <ul class="text-info__list">
               <li class="text-info__item">
-                <label for="second-name">Фамилия:</label>
-                <input type="text" name="second-name" id="second-name" placeholder="Укажите фамилию *" required>
+                <label class="text-info__label" for="second-name">Фамилия:</label>
+                <input class="text-info__input" type="text" name="second-name" id="second-name" placeholder="Укажите фамилию *" required>
               </li>
               <li class="text-info__item">
-                <label for="first-name">Имя:</label>
-                <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
+                <label class="text-info__label" for="first-name">Имя:</label>
+                <input class="text-info__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
               </li>
               <li class="text-info__item">
-                <label for="patronymic">Отчество:</label>
-                <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+                <label class="text-info__label" for="patronymic">Отчество:</label>
+                <input class="text-info__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </section>
@@ -55,28 +58,28 @@
             <h2 class="sign-in__title">Ваши безбашенные достижения в путешествии</h2>
             <ul class="checkboxes-info__list">
               <li class="checkboxes-info__item">
-                <input type="checkbox" name="shark" id="shark" checked>
-                <label for="shark">Сделал селфи с акулой</label>
+                <input class="checkboxes-info__input" type="checkbox" name="shark" id="shark" checked>
+                <label class="checkboxes-info__label" for="shark">Сделал селфи с акулой</label>
               </li>
               <li class="checkboxes-info__item">
-                <input type="checkbox" name="beach" id="beach" checked>
-                <label for="beach">Обгорел на пляже</label>
+                <input class="checkboxes-info__input" type="checkbox" name="beach" id="beach" checked>
+                <label class="checkboxes-info__label" for="beach">Обгорел на пляже</label>
               </li>
               <li class="checkboxes-info__item">
-                <input type="checkbox" name="norris" id="norris">
-                <label for="norris">Видел Чака Норриса</label>
+                <input class="checkboxes-info__input" type="checkbox" name="norris" id="norris">
+                <label class="checkboxes-info__label" for="norris">Видел Чака Норриса</label>
               </li>
               <li class="checkboxes-info__item">
-                <input type="checkbox" name="souvenirs" id="souvenirs">
-                <label for="souvenirs">Накупил сувениров</label>
+                <input class="checkboxes-info__input" type="checkbox" name="souvenirs" id="souvenirs">
+                <label class="checkboxes-info__label" for="souvenirs">Накупил сувениров</label>
               </li>
               <li class="checkboxes-info__item">
-                <input type="checkbox" name="tower" id="tower" checked>
-                <label for="tower">Удержал башню</label>
+                <input class="checkboxes-info__input" type="checkbox" name="tower" id="tower" checked>
+                <label class="checkboxes-info__label" for="tower">Удержал башню</label>
               </li>
               <li class="checkboxes-info__item">
-                <input type="checkbox" name="hotel" id="hotel">
-                <label for="hotel">Разгромил отель</label>
+                <input class="checkboxes-info__input" type="checkbox" name="hotel" id="hotel">
+                <label class="checkboxes-info__label" for="hotel">Разгромил отель</label>
               </li>
             </ul>
           </section>
@@ -84,12 +87,12 @@
             <h2 class="visually-hidden">Введите контактные данные</h2>
             <ul class="text-info__list">
               <li class="text-info__item">
-                <label for="telephone">Номер телефона</label>
-                <input type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+                <label class="text-info__label" for="telephone">Номер телефона</label>
+                <input class="text-info__input" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
               </li>
               <li class="text-info__item">
-                <label for="email">Адрес почты</label>
-                <input type="tel" name="email" id="email" placeholder="Введите почту *" required>
+                <label class="text-info__label" for="email">Адрес почты</label>
+                <input class="text-info__input" type="tel" name="email" id="email" placeholder="Введите почту *" required>
               </li>
             </ul>
           </section>
@@ -97,37 +100,37 @@
             <h2 class="sign-in__title">С каким приложением путешествовали?</h2>
             <ul class="radio-info__list">
               <li class="radio-info__item">
-                <input type="radio" name="ios" id="ios" checked>
-                <label for="ios">Pink для iOS</label>
+                <input class="radio-info__input" type="radio" name="ios" id="ios" checked>
+                <label class="radio-info__label" for="ios">Pink для iOS</label>
               </li>
               <li class="radio-info__item">
-                <input type="radio" name="android" id="android">
-                <label for="android">Pink на Android</label>
+                <input class="radio-info__input" type="radio" name="android" id="android">
+                <label class="radio-info__label" for="android">Pink на Android</label>
               </li>
               <li class="radio-info__item">
-                <input type="radio" name="windows" id="windows">
-                <label for="windows">Windows Phone</label>
+                <input class="radio-info__input" type="radio" name="windows" id="windows">
+                <label class="radio-info__label" for="windows">Windows Phone</label>
               </li>
             </ul>
           </section>
           <section class="sign-in__text text-info">
             <h2 class="sign-in__title">Опишите свои эмоции</h2>
-            <textarea name="emotions" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="text-info__input" name="emotions" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </section>
           <button class="sign-in__submit" type="submit">Отправить форму</button>
           <small class="sign-in__legend"><sup>*</sup> — Обязательные поля</small>
         </form>
       </section>
     </main>
-    <footer class="page-footer">
-      <a>
-        <img class="page-footer__logo-image" src="http://placehold.it/160x70" width="160" height="70" alt="Логотип Pink">
+    <footer class="page-footer container">
+      <a href="index.html">
+        <img class="page-footer__logo-image" src="./img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
       </a>
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <a class="social__btn social__btn--vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
+        <a class="social__btn social__btn--tw" href="#"><span class="visually-hidden">Твиттер</span></a>
         <a class="social__btn social__btn--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
-        <a class="social__btn social__btn--inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
+        <a class="social__btn social__btn--yt" href="#"><span class="visually-hidden">Ютьюб</span></a>
       </section>
       <section class="developed-by">
         <span class="developed-by__title">Разработано</span>
@@ -135,7 +138,7 @@
       </section>
     </footer>
     <section class="modal">
-      <section class="modal__upload-success">
+      <section class="modal__upload-success visually-hidden">
         <h2 class="modal__title">Ваша заявка отправлена</h2>
         <p class="modal__description">
           Спасибо за ваше участие, ваша заявка уже поступила к нам.
@@ -143,7 +146,7 @@
         </p>
         <button class="modal__close">Закрыть окно</button>
       </section>
-      <section class="modal__upload-failure">
+      <section class="modal__upload-failure visually-hidden">
         <h2 class="modal__title">Что-то пошло не так!</h2>
         <p class="modal__description">
           Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
