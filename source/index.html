@@ -3,56 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title>Приложение Pink</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a class="page-header__logo page-header__logo--active">
-        <img class="page-header__logo-image" src="http://placehold.it/80x30" width="80" height="30" alt="Логотип Pink">
+        <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a>Главная</a>
+            <a class="main-nav__link main-nav__link--active">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Конкурс</a>
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">HTML Academy</a>
+            <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Приложение Pink</h1>
-      <section class="download">
+      <section class="page-main__main-title-wrapper container">
+        <h1 class="visually-hidden">Приложение Pink</h1>
+      </section>
+      <section class="download container">
         <h2 class="download__title">
-          <a href="https://itunes.apple.com/ru/genre/ios/id36?mt=8" >Скачать приложение</a>
+          <a class="btn btn__download" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8" >Скачать приложение</a>
         </h2>
-        <p class="download__phrase">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         <ul class="download__list">
           <li class="download__item">
-            <a href="https://itunes.apple.com/ru/genre/ios/id36?mt=8" >Apple</a>
+            <a class="download__link--apple" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8" >Apple</a>
           </li>
           <li class="download__item">
-            <a href="https://play.google.com/store/apps" >Android</a>
+            <a class="download__link--android" href="https://play.google.com/store/apps" >Android</a>
           </li>
           <li class="download__item">
-            <a href="https://www.microsoft.com/en-us/store/apps/windows?icid=CNavAppsWindowsApps" >Windows</a>
+            <a class="download__link--windows" href="https://www.microsoft.com/en-us/store/apps/windows?icid=CNavAppsWindowsApps" >Windows</a>
           </li>
         </ul>
+        <p class="download__phrase">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
-      <section class="advantages">
+      <section class="advantages container">
         <h2 class="visually-hidden">Преимущества приложения</h2>
-        <div class="advantages__wrapper">
-          <p class="advantages__phrase">Устали от серости мегаполиса?</p>
-          <p class="advantages__phrase">Нам есть что вам предложить!</p>
-        </div>
-        <ul class="advantages__list">
+        <p class="advantages__phrase">Устали от серости мегаполиса?</p>
+        <p class="advantages__phrase">Нам есть что вам предложить!</p>
+        <ul class="advantages__list splay-wrapper">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -67,24 +68,24 @@
           </li>
         </ul>
       </section>
-      <section class="comments">
+      <section class="comments container">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
         <div class="comments__wrapper slider">
           <ul class="comments__list slider__list">
             <li class="comments__item slider__item">
               <h3 class="comments__username">Николай Петров</h3>
               <p class="comments__message">
-                Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </li>
-            <li class="comments__item slider__item">
+            <li class="comments__item slider__item visually-hidden">
               <h3 class="comments__username">Фамилия Имя</h3>
               <p class="comments__message">
                 Сообщение
               </p>
             </li>
-            <li class="comments__item slider__item">
+            <li class="comments__item slider__item visually-hidden">
               <h3 class="comments__username">Фамилия Имя</h3>
               <p class="comments__message">
                 Сообщение
@@ -98,49 +99,36 @@
           </p>
         </div>
       </section>
-      <section class="price">
+      <section class="price container">
         <h2 class="visually-hidden">Цены</h2>
-        <div class="price__wrapper slider">
+        <div class="splay-wrapper slider">
           <ul class="price__list slider__list">
-            <li class="price__item slider__item">
-              <table>
-                <tr>
-                  <td>
-                    <h3 class="price__title">Название</h3>
-                    <span class="price__value">Цена</span>
-                    <span class="price__set">Розовый фильтр</span>
-                    <span class="price__set">Смайлики</span>
-                    <span class="price__set">Комментарии</span>
-                  </td>
-                </tr>
-              </table>
+            <li class="price__item slider__item visually-hidden">
+              <div class="price__wrapper">
+                <h3 class="price__title">Название</h3>
+                <span class="price__value">Цена</span>
+              </div>
+              <span class="price__set">Розовый фильтр</span>
+              <span class="price__set">Смайлики</span>
+              <span class="price__set">Комментарии</span>
             </li>
             <li class="price__item slider__item">
-              <table>
-                <tr>
-                  <td>
-                    <h3 class="price__title">Стандарт</h3>
-                    <span class="price__value">3,99 USD</span>
-                    <span class="price__set price__set--on">Розовый фильтр</span>
-                    <span class="price__set price__set--on">Смайлики</span>
-                    <span class="price__set price__set--off">Комментарии</span>
-                  </td>
-                </tr>
-              </table>
+              <div class="price__wrapper">
+                <h3 class="price__title">Стандарт</h3>
+                <span class="price__value">3,99 USD</span>
+              </div>
+              <span class="price__set price__set--on">Розовый фильтр</span>
+              <span class="price__set price__set--on">Смайлики</span>
+              <span class="price__set price__set--off">Комментарии</span>
             </li>
-            <li class="price__item slider__item">
-              <table>
-                <tr>
-                  <td>
-                    <h3 class="price__title">Название</h3>
-                    <span class="price__value">Цена</span>
-                    <span class="price__set">Розовый фильтр</span>
-                    <span class="price__set">Смайлики</span>
-                    <span class="price__set">Комментарии</span>
-                  </td>
-                </tr>
-              </table>
-            </li>
+            <li class="price__item slider__item visually-hidden">
+              <div class="price__wrapper">
+                <h3 class="price__title">Название</h3>
+                <span class="price__value">Цена</span>
+              </div>
+              <span class="price__set">Розовый фильтр</span>
+              <span class="price__set">Смайлики</span>
+              <span class="price__set">Комментарии</span>
           </ul>
           <p class="price__toggles slider__toggles">
             <button class="slider__toggle" type="button"></button>
@@ -149,7 +137,7 @@
           </p>
         </div>
       </section>
-      <section class="feedback">
+      <section class="feedback container">
         <h2 class="visually-hidden">Наши контакты</h2>
         <span class="feedback__title">Остались вопросы? Свяжитесь с нами!</span>
         <div class="feedback__wrapper">
@@ -161,12 +149,12 @@
           <a class="feedback__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
         <div class="feedback__wrapper">
-          <span class="feedback__phrase">Приехжайте в гости:</span>
+          <span class="feedback__phrase">Приезжайте в гости:</span>
           <span class="feedback__link">ул. Большая Конюшенная, 19/8</span>
         </div>
         <span></span>
       </section>
-      <section class="map">
+      <section class="map container">
         <!-- тег iframe-->
       </section>
     </main>
