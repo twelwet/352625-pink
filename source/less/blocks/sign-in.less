@@ -2,7 +2,25 @@
 
 }
 
-.sign-in__title {
+.sign-in__fieldset,
+.sign-in__name {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.sign-in__list {
+  margin: 0;
+  padding: 0;
+}
+
+.sign-in__item {
+  list-style: none;
+  text-align: left;
+}
+
+.sign-in__title,
+.sign-in__label {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -10,20 +28,120 @@
   color: #d22856;
   text-transform: uppercase;
   text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
+.sign-in__label {
+  line-height: 30px;
+  text-align: left;
+}
 
-.sign-in__text {
+.sign-in__wrapper {
+  background-color: #f2f2f2;
+}
+
+.sign-in__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in__submit {
+  width: 280px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 2px;
+}
+
+.sign-in__legend {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.sign-in__legend sup {
+  color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+
+  .sign-in {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sign-in__name {
+    order: -3;
+  }
+
+  .sign-in__radios {
+    order: -2;
+  }
+
+  .sign-in__contacts {
+    order: -1;
+  }
+
+  .sign-in__fieldset {
+    border: 2px solid #e5e5e5;
+  }
+
+  .sign-in__title {
+    display: inline;
+  }
+
+  .sign-in__wrapper {
+    background-color: #ffffff;
+  }
+
+  .sign-in__textarea {
+
+  }
+
+  .sign-in__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sing-in__submit {
+    width: 300px;
+  }
 
 }
 
+@media (min-width: @desktop-width) {
 
-.sign-in__checkboxes {
+  .sign-in {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-}
+  .sign-in__name {
+    margin-right: 50px;
+  }
 
-.sign-in__radio {
+  .sign-in__name,
+  .sign-in__radios {
+    width: 440px;
+  }
+
+  .sign-in__contacts,
+  .sign-in__checkboxes,
+  .sign-in__textarea,
+  .sign-in__footer {
+    width: 940px;
+  }
 
 }
