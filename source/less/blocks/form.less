@@ -1,26 +1,26 @@
-.sign-in {
-
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
-.sign-in__fieldset,
-.sign-in__name {
+.form__fieldset {
   margin: 0;
   padding: 0;
   border: none;
 }
 
-.sign-in__list {
+.form__list {
   margin: 0;
   padding: 0;
-}
-
-.sign-in__item {
   list-style: none;
-  text-align: left;
 }
 
-.sign-in__title,
-.sign-in__label {
+.form__item {
+  margin-bottom: 40px;
+}
+
+.form__title,
+.form__label {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -32,22 +32,22 @@
   padding-right: 20px;
 }
 
-.sign-in__label {
+.form__label {
   line-height: 30px;
   text-align: left;
 }
 
-.sign-in__wrapper {
+.form__color-wrapper {
   background-color: #f2f2f2;
 }
 
-.sign-in__footer {
+.form__footer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.sign-in__submit {
+.form__submit {
   width: 280px;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 700;
@@ -60,7 +60,7 @@
   border-radius: 2px;
 }
 
-.sign-in__legend {
+.form__legend {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -69,52 +69,51 @@
   text-transform: uppercase;
 }
 
-.sign-in__legend sup {
+.form__legend sup {
   color: #d22856;
 }
 
 @media (min-width: @tablet-width) {
 
-  .sign-in {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .sign-in__name {
-    order: -3;
-  }
-
-  .sign-in__radios {
-    order: -2;
-  }
-
-  .sign-in__contacts {
-    order: -1;
-  }
-
-  .sign-in__fieldset {
+  .form__fieldset {
     border: 2px solid #e5e5e5;
   }
 
-  .sign-in__title {
+  .form__item {
+    margin-bottom: 65px;
+  }
+
+  .form__title {
     display: inline;
   }
 
-  .sign-in__wrapper {
+  .form__text-field--name {
+    order: -3;
+    border: none;
+  }
+
+  .form__radios {
+    order: -2;
+  }
+
+  .form__text-field--contacts {
+    order: -1;
+  }
+
+  .form__checkboxes {
+    order: 0;
+  }
+
+  .form__color-wrapper {
     background-color: #ffffff;
   }
 
-  .sign-in__textarea {
-
-  }
-
-  .sign-in__footer {
-    display: flex;
+  .form__footer {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .sing-in__submit {
+  .form__submit {
     width: 300px;
   }
 
@@ -122,25 +121,25 @@
 
 @media (min-width: @desktop-width) {
 
-  .sign-in {
-    display: flex;
+  .form {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .sign-in__name {
-    margin-right: 50px;
+  .form__text-field--name {
+    width: 440px;
+    margin-right: 60px;
+    padding-top: 7px;
   }
 
-  .sign-in__name,
-  .sign-in__radios {
+  .form__radios {
     width: 440px;
   }
 
-  .sign-in__contacts,
-  .sign-in__checkboxes,
-  .sign-in__textarea,
-  .sign-in__footer {
+  .form__checkboxes,
+  .form__text-field--contacts,
+  .form__textarea,
+  .form__footer {
     width: 940px;
   }
 

@@ -1,0 +1,90 @@
+.text-field__input {
+  box-sizing: border-box;
+  display: block;
+  width: 280px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+}
+
+.text-field__input::-webkit-input-placeholder {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+}
+
+.text-field__input:-moz-placeholder,
+.text-field__input::-moz-placeholder {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+.text-field__input:-ms-input-placeholder {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+@media (min-width: @tablet-width) {
+
+  .text-field__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .text-field__flex--baseline {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .text-field__flex--baseline:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .text-field__flex--reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .text-field__input--stretch {
+    flex-grow: 1;
+  }
+
+  .text-field__input--fix-width {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .text-field textarea {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .text-field__flex {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .text-field__flex .text-field__input {
+    width: 375px;
+  }
+
+  .text-field textarea {
+    width: 820px;
+  }
+
+}

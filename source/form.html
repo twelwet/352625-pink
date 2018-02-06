@@ -8,7 +8,7 @@
   <body>
     <header class="page-header container">
       <a class="page-header__logo" href="index.html">
-        <span class="visually-hidden">Главная</span>
+        <span class="visually-hidden">PINK</span>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -39,94 +39,94 @@
         <p class="phrase visually-hidden">
           Пожалуйста, заполните форму ниже:
         </p>
-        <form class="sign-in" action="https://echo.htmlacademy.ru">
-          <fieldset class="sign-in__name">
+        <form class="form" action="https://echo.htmlacademy.ru">
+          <fieldset class="form__item form__fieldset form__text-field--name text-field">
             <legend class="visually-hidden">Введите фамилию, имя, отчество</legend>
-            <ul class="sign-in__list name">
-              <li class="sign-in__item">
-                <label class="sign-in__label" for="second-name">Фамилия:</label>
-                <input class="text-info__input name__input" type="text" name="second-name" id="second-name" placeholder="Укажите фамилию *" required>
+            <ul class="form__list">
+              <li class="text-field__flex--baseline">
+                <label class="form__label" for="second-name">Фамилия:</label>
+                <input class="text-field__input text-field__input--stretch" type="text" name="second-name" id="second-name" placeholder="Укажите фамилию *" required>
               </li>
-              <li class="sign-in__item">
-                <label class="sign-in__label" for="first-name">Имя:</label>
-                <input class="text-info__input name__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
+              <li class="text-field__flex--baseline">
+                <label class="form__label" for="first-name">Имя:</label>
+                <input class="text-field__input text-field__input--stretch" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
               </li>
-              <li class="sign-in__item">
-                <label class="sign-in__label" for="patronymic">Отчество:</label>
-                <input class="text-info__input name__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+              <li class="text-field__flex--baseline">
+                <label class="form__label" for="patronymic">Отчество:</label>
+                <input class="text-field__input text-field__input--stretch" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
-          <div class="sign-in__wrapper sign-in__checkboxes">
-            <fieldset class="sign-in__fieldset checkboxes-info">
-              <legend class="sign-in__title">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="sign-in__list">
-                <li class="sign-in__item">
-                  <input class="checkboxes-info__input" type="checkbox" name="shark" id="shark" checked>
-                  <label class="checkboxes-info__label" for="shark">Сделал селфи с акулой</label>
+          <div class="form__item form__color-wrapper form__checkboxes">
+            <fieldset class="form__fieldset choice-field">
+              <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="form__list">
+                <li>
+                  <input class="choice-field__input" type="checkbox" name="shark" id="shark" checked>
+                  <label class="choice-field__label" for="shark">Сделал селфи с акулой</label>
                 </li>
-                <li class="sign-in__item">
-                  <input class="checkboxes-info__input" type="checkbox" name="beach" id="beach" checked>
-                  <label class="checkboxes-info__label" for="beach">Обгорел на пляже</label>
+                <li>
+                  <input class="choice-field__input" type="checkbox" name="beach" id="beach" checked>
+                  <label class="choice-field__label" for="beach">Обгорел на пляже</label>
                 </li>
-                <li class="sign-in__item">
-                  <input class="checkboxes-info__input" type="checkbox" name="norris" id="norris">
-                  <label class="checkboxes-info__label" for="norris">Видел Чака Норриса</label>
+                <li>
+                  <input class="choice-field__input" type="checkbox" name="norris" id="norris">
+                  <label class="choice-field__label" for="norris">Видел Чака Норриса</label>
                 </li>
-                <li class="sign-in__item">
-                  <input class="checkboxes-info__input" type="checkbox" name="souvenirs" id="souvenirs">
-                  <label class="checkboxes-info__label" for="souvenirs">Накупил сувениров</label>
+                <li>
+                  <input class="choice-field__input" type="checkbox" name="souvenirs" id="souvenirs">
+                  <label class="choice-field__label" for="souvenirs">Накупил сувениров</label>
                 </li>
-                <li class="sign-in__item">
-                  <input class="checkboxes-info__input" type="checkbox" name="tower" id="tower" checked>
-                  <label class="checkboxes-info__label" for="tower">Удержал башню</label>
+                <li>
+                  <input class="choice-field__input" type="checkbox" name="tower" id="tower" checked>
+                  <label class="choice-field__label" for="tower">Удержал башню</label>
                 </li>
-                <li class="sign-in__item">
-                  <input class="checkboxes-info__input" type="checkbox" name="hotel" id="hotel">
-                  <label class="checkboxes-info__label" for="hotel">Разгромил отель</label>
+                <li>
+                  <input class="choice-field__input" type="checkbox" name="hotel" id="hotel">
+                  <label class="choice-field__label" for="hotel">Разгромил отель</label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <fieldset class="sign-in__fieldset sign-in__contacts text-info">
-            <legend class="sign-in__title visually-hidden">Контактная информация</legend>
-            <ul class="sign-in__list contacts">
-              <li class="sign-in__item">
-                <label class="sign-in__label" for="telephone">Номер телефона</label>
-                <input class="text-info__input contacts__input" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+          <fieldset class="form__item form__fieldset form__text-field--contacts text-field">
+            <legend class="form__title visually-hidden">Контактная информация</legend>
+            <ul class="form__list text-field__flex">
+              <li class="text-field__flex--reverse">
+                <label class="form__label" for="telephone">Номер телефона</label>
+                <input class="text-field__input text-field__input--fix-width" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
               </li>
-              <li class="sign-in__item">
-                <label class="sign-in__label" for="email">Адрес почты</label>
-                <input class="text-info__input contacts__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+              <li class="text-field__flex--reverse">
+                <label class="form__label" for="email">Адрес почты</label>
+                <input class="text-field__input text-field__input--fix-width" type="email" name="email" id="email" placeholder="Введите почту *" required>
               </li>
             </ul>
           </fieldset>
-          <div class="sign-in__wrapper sign-in__radios">
-            <fieldset class="sign-in__fieldset radio-info">
-              <legend class="sign-in__title">С каким приложением путешествовали?</legend>
-              <ul class="sign-in__list">
-                <li class="sign-in__item">
-                  <input class="radio-info__input" type="radio" name="app" id="ios" checked>
-                  <label class="radio-info__label" for="ios">Pink для iOS</label>
+          <div class="form__item form__color-wrapper form__radios">
+            <fieldset class="form__fieldset choice-field">
+              <legend class="form__title">С каким приложением путешествовали?</legend>
+              <ul class="form__list">
+                <li>
+                  <input class="choice-field__input" type="radio" name="app" id="ios" checked>
+                  <label class="choice-field__label" for="ios">Pink для iOS</label>
                 </li>
-                <li class="sign-in__item">
-                  <input class="radio-info__input" type="radio" name="app" id="android">
-                  <label class="radio-info__label" for="android">Pink на Android</label>
+                <li>
+                  <input class="choice-field__input" type="radio" name="app" id="android">
+                  <label class="choice-field__label" for="android">Pink на Android</label>
                 </li>
-                <li class="sign-in__item">
-                  <input class="radio-info__input" type="radio" name="app" id="windows">
-                  <label class="radio-info__label" for="windows">Windows Phone</label>
+                <li>
+                  <input class="choice-field__input" type="radio" name="app" id="windows">
+                  <label class="choice-field__label" for="windows">Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <fieldset class="sign-in__fieldset sign-in__textarea text-info">
-            <legend class="sign-in__title">Опишите свои эмоции</legend>
-            <textarea class="text-info__textarea" name="emotions" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <fieldset class="form__item form__fieldset form__textarea text-field">
+            <legend class="form__title">Опишите свои эмоции</legend>
+            <textarea class="text-field__input text-field__input--fix-width" name="emotions" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <footer class="sign-in__footer">
-            <button class="sign-in__submit" type="submit">Отправить форму</button>
-            <small class="sign-in__legend"><sup>*</sup> — Обязательные поля</small>
+          <footer class="form__item form__footer">
+            <button class="form__submit" type="submit">Отправить форму</button>
+            <small class="form__legend"><sup>*</sup> — Обязательные поля</small>
           </footer>
         </form>
       </section>
