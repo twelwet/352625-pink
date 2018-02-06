@@ -6,3 +6,27 @@
   background-color: #f2f2f2;
   margin-bottom: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .photos__slide {
+    width: 300px;
+  }
+
+  .photos__slide-panorama {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .photos__slide-panorama {
+    width: 940px;
+  }
+}

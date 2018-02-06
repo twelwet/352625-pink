@@ -13,6 +13,11 @@
   color: #283645;
 }
 
+.feedback__main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .feedback__wrapper {
 
 }
@@ -33,4 +38,30 @@
   font-size: 24px;
   text-align: center;
   color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+
+  .feedback__title {
+    font-size: 40px;
+  }
+
+  .feedback__main-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .feedback__title {
+    font-size: 50px;
+  }
+
+  .feedback__main-wrapper {
+    flex-wrap: nowrap;
+  }
+
 }

@@ -1,0 +1,146 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__item {
+  margin-bottom: 40px;
+}
+
+.form__title,
+.form__label {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form__label {
+  line-height: 30px;
+  text-align: left;
+}
+
+.form__color-wrapper {
+  background-color: #f2f2f2;
+}
+
+.form__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__submit {
+  width: 280px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 2px;
+}
+
+.form__legend {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.form__legend sup {
+  color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+
+  .form__fieldset {
+    border: 2px solid #e5e5e5;
+  }
+
+  .form__item {
+    margin-bottom: 65px;
+  }
+
+  .form__title {
+    display: inline;
+  }
+
+  .form__text-field--name {
+    order: -3;
+    border: none;
+  }
+
+  .form__radios {
+    order: -2;
+  }
+
+  .form__text-field--contacts {
+    order: -1;
+  }
+
+  .form__checkboxes {
+    order: 0;
+  }
+
+  .form__color-wrapper {
+    background-color: #ffffff;
+  }
+
+  .form__footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__submit {
+    width: 300px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__text-field--name {
+    width: 440px;
+    margin-right: 60px;
+    padding-top: 7px;
+  }
+
+  .form__radios {
+    width: 440px;
+  }
+
+  .form__checkboxes,
+  .form__text-field--contacts,
+  .form__textarea,
+  .form__footer {
+    width: 940px;
+  }
+
+}
