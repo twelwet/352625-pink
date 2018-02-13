@@ -1,5 +1,12 @@
-.comments__wrapper {
+.comments {
+  position: relative;
+  margin-top: 42px;
+  margin-bottom: 18px;
+}
 
+.comments__wrapper {
+  position: relative;
+  padding-bottom: 50px;
 }
 
 .comments__list {
@@ -33,22 +40,24 @@
 }
 
 .comments__toggles {
-  text-align: center;
+  position: absolute;
+  bottom: 22px;
+  left: 109px;
 }
 
 @media (min-width: @tablet-width) {
 
-  .comments__item:nth-of-type(1) {
+  .comments {
+    margin-top: 78px;
+  }
+
+  .comments__item {
     display: flex;
     flex-direction: column;
   }
 
-  .comments__username-briefly {
-    display: inline;
-    font-family: 'Open Sans', 'Arial', sans-serif;
-  }
-
   .comments__username {
+    margin-top: 16px;
     font-size: 20px;
   }
 
@@ -58,6 +67,9 @@
   }
 
   .comments__username-briefly {
+    display: inline;
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -65,11 +77,43 @@
     text-align: center;
     color: #283645;
   }
+
+  .comments__toggles {
+    bottom: 4px;
+    left: 280px;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
 
+  .comments {
+    margin-top: 0;
+    margin-bottom: -6px;
+    padding: 187px 0 0 14px;
+  }
+
+  .comments::before {
+    position: absolute;
+    content: '';
+    top: 75px;
+    left: 440px;
+    width: 78px;
+    height: 63px;
+    background: url('../img/quotes.png') no-repeat 0 0;
+  }
+
+  .comments__list {
+    margin-left: -8px;
+  }
+
+  .comments__message {
+    width: 700px;
+    margin: 0 auto;
+  }
+
   .comments__username {
+    margin-top: 36px;
     font-size: 24px;
     line-height: 30px;
   }

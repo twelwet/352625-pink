@@ -1,7 +1,12 @@
+.text-field li {
+  margin-bottom: 15px;
+}
+
 .text-field__input {
   box-sizing: border-box;
   display: block;
   width: 280px;
+  margin-top: 5px;
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -11,6 +16,14 @@
   font-weight: 400;
   color: #283645;
   border: 2px solid #e5e5e5;
+}
+
+.text-field__input:hover {
+  border: 2px solid @dark-blue;
+}
+
+.text-field__input:active {
+  border: 2px solid @red;
 }
 
 .text-field__input::-webkit-input-placeholder {
@@ -30,6 +43,11 @@
   font-family: 'Open Sans', 'Arial', sans-serif;
 }
 
+.text-field textarea {
+  margin-top: 15px;
+  height: 200px;
+}
+
 @media (min-width: @tablet-width) {
 
   .text-field__flex {
@@ -37,7 +55,10 @@
     flex-direction: column;
     align-items: center;
     padding-top: 40px;
-    padding-bottom: 20px;
+  }
+
+  .text-field__flex li {
+    margin-bottom: 30px;
   }
 
   .text-field__flex--baseline {
@@ -46,12 +67,35 @@
   }
 
   .text-field__flex--baseline:not(:last-child) {
-    margin-bottom: 50px;
+    margin-bottom: 46px;
   }
 
   .text-field__flex--reverse {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .text-field__flex--reverse label {
+    position: relative;
+    padding-left: 20px;
+    padding-top: 7px;
+  }
+
+  .text-field__flex--reverse label::before {
+    position: absolute;
+    content: '';
+    top: -62px;
+    right: 2px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .text-field__label-phone::before {
+    background: #e5e5e5 url('../img/icon-phone.png') no-repeat 20px 20px;
+  }
+
+  .text-field__label-mail::before {
+    background: #e5e5e5 url('../img/icon-mail.png') no-repeat 20px 20px;
   }
 
   .text-field__input--stretch {
@@ -77,6 +121,11 @@
     justify-content: space-between;
     padding-left: 60px;
     padding-right: 60px;
+    padding-top: 35px;
+  }
+
+  .text-field__flex li {
+    margin-bottom: 15px;
   }
 
   .text-field__flex .text-field__input {
@@ -85,6 +134,7 @@
 
   .text-field textarea {
     width: 820px;
+    height: 125px;
   }
 
 }

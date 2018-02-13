@@ -1,18 +1,26 @@
 @media (min-width: @tablet-width) {
 
   .stats {
+    padding-top: 50px;
     display: block;
     font-family: 'Open Sans', 'Arial', sans-serif;
-    background: url('../img/timer-tablet@1x.jpg') no-repeat left 20px top 20px;
+    background: url('../img/timer-tablet@1x.png') no-repeat left 21px top 59px;
   }
 
   .stats__wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 30px;
     padding-left: 310px;
   }
 
   .stats__title {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .stats__title p {
+    margin: 0;
+    padding: 0;
     width: 200px;
     font-weight: 700;
     font-size: 30px;
@@ -22,6 +30,8 @@
   }
 
   .stats__description {
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -35,6 +45,14 @@
     line-height: 24px;
     text-align: left;
     color: #d22856;
+
+    &:hover {
+      color: @dark-blue;
+    }
+
+    &:active {
+      color: @medium-gray;
+    }
   }
 
 }
@@ -42,21 +60,33 @@
 @media (min-width: @desktop-width) {
 
   .stats {
-    background: #f2f2f2 url('../img/timer-desktop@1x.png') no-repeat 100px 50px;
+    background: #f2f2f2 url('../img/timer-desktop@1x.png') no-repeat 130px 65px;
+    padding-bottom: 11px;
   }
 
   .stats__wrapper {
+    margin-left: 15px;
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 350px;
   }
 
   .stats__title {
-    width: 300px;
+    margin-top: 6px;
+    display: flex;
+  }
 
+  .stats__title p {
+    display: block;
+  }
+
+  .stats__title p:first-child {
+    width: 130px;
   }
 
   .stats__description {
+    margin-top: 20px;
+    margin-bottom: 32px;
     font-size: 18px;
     line-height: 30px;
   }

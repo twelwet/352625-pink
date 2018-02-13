@@ -13,3 +13,82 @@
   line-height: 30px;
   color: #283645;
 }
+
+.choice-field__input[type='checkbox'],
+.choice-field__input[type='radio'] {
+  display: none;
+}
+
+.choice-field__input + .choice-field__label {
+  position: relative;
+  cursor: pointer;
+}
+
+.choice-field__input:disabled + .choice-field__label {
+  cursor: default;
+}
+
+.choice-field__input[type='checkbox'] + .choice-field__label svg {
+  position: absolute;
+  top: 4px;
+  left: -59px;
+  fill: transparent;
+}
+
+.choice-field__input[type='checkbox']:checked + .choice-field__label svg {
+  fill: @red;
+}
+
+.choice-field__input[type='checkbox'] + .choice-field__label::before {
+  content: '';
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: -6px;
+  left: -68px;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+}
+
+.choice-field__input[type='radio'] + .choice-field__label::before {
+  content: '';
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: -7px;
+  left: -69px;
+  border: 2px solid #e5e5e5;
+  box-shadow:
+    inset 0 0 0 9px #ffffff,
+    inset 0 0 0 17px #ffffff;
+  border-radius: 50%;
+}
+
+.choice-field__input[type='radio']:checked + .choice-field__label::before {
+  box-shadow:
+    inset 0 0 0 9px #ffffff,
+    inset 0 0 0 17px @red;
+}
+
+.choice-field__input + .choice-field__label:hover::before {
+  border: 2px solid @dark-blue;
+}
+
+.choice-field__input + .choice-field__label:active::before {
+  border: 2px solid @red;
+}
+
+@media (min-width: @tablet-width) {
+
+  .choice-field__input[type='radio'] + .choice-field__label::before {
+    left: -61px;
+  }
+
+  .choice-field__input[type='checkbox'] + .choice-field__label::before {
+    left: -59px;
+  }
+
+  .choice-field__input[type='checkbox'] + .choice-field__label svg {
+    left: -50px;
+  }
+}

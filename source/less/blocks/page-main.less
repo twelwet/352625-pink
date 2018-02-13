@@ -1,40 +1,47 @@
 .page-main__title-wrapper {
-  height: 171px;
-  background: url('../img/bg-back-mobile@1x.jpg') no-repeat 0, 0;
+  height: 169px;
+  background: url('../img/bg-back-mobile@1x.jpg') no-repeat 0 -70px;
 }
 
 .page-main__main-title-wrapper {
-  height: 396px;
+  height: 394px;
   background-image: url('../img/iphone-hand-mobile@1x.png'), url('../img/bg-back-mobile@1x.jpg');
   background-repeat: no-repeat, no-repeat;
-  background-position: 0 116px, 0 -66px;
+  background-position: 0 108px, 0 -68px;
 }
 
 .page-main__title {
   margin: 0;
-  padding: 0;
+  padding: 27px 0 0 0;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 24px;
+  line-height: 30px;
   text-align: center;
   color: #ffffff;
 }
 
 @media (min-width: @tablet-width) {
 
+  .page-main {
+
+  }
+
   .page-main__title-wrapper {
-    height: 330px;
-    background: url('../img/bg-back-tablet@1x.jpg') no-repeat 0 0;
+    height: 328px;
+    background: url('../img/bg-back-tablet@1x.jpg') no-repeat 0 -115px;
   }
 
   .page-main__main-title-wrapper {
-    height: 620px;
+    height: 617px;
     background-image: url('../img/iphone-hand-tablet@1x.png'), url('../img/bg-back-tablet@1x.jpg');
-    background-position: 0 75px, 0 -100px;
+    background-position: 0 72px, 0 -112px;
   }
 
   .page-main__title {
+    padding: 66px 0 0 0;
     font-size: 50px;
+    line-height: 60px;
   }
 
 }
@@ -42,22 +49,27 @@
 @media (min-width: @desktop-width) {
 
   .page-main {
-    margin-top: -100px;
+    margin-top: -111px;
   }
 
   .page-main__title-wrapper {
     height: 394px;
-    background: url('../img/bg-back-desktop@1x.jpg') no-repeat 0 0;
+    background: url('../img/bg-back-desktop@1x.jpg') no-repeat 0 -1px;
   }
 
   .page-main__main-title-wrapper {
     height: 853px;
     background-image: url('../img/iphone-hand-desktop@1x.png'), url('../img/bg-back-desktop@1x.jpg');
-    background-position: 140px 210px, 0 0;
+    background-position: 145px 210px, 0 0;
   }
 
   .page-main__title {
-    padding-top: 100px;
+    padding-top: 172px;
+    width: 500px;
+    margin: 0 auto;
   }
 
+  .page-main__title-width-unset {
+    width: unset
+  }
 }

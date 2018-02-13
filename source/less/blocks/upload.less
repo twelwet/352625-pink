@@ -1,5 +1,8 @@
-.upload {
-
+.upload img {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 280px;
+  height: 374px;
 }
 
 .upload__slide {
@@ -9,31 +12,70 @@
   background-color: #f2f2f2;
 }
 
-.upload__photo {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 .upload__tools {
-  padding-top: 42px;
-  padding-bottom: 34px;
+  padding: 34px 0 34px 0;
   display: flex;
   flex-direction: column;
 }
 
 .upload__btn {
-  height: 122px;
-  padding-top: 40px;
-  padding-bottom: 40px;
   border-top: 1px solid #dddfe0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 
 @media (min-width: @tablet-width) {
+
   .upload__slide {
     display: flex;
+    justify-content: space-between;
+    padding-top: 58px;
+    padding-bottom: 55px;
+    margin-bottom: -12px;
+  }
+
+  .upload img {
+    display: block;
+    width: 300px;
+    height: 400px;
+  }
+
+  .upload__tools {
+    padding: 0;
+  }
+
+  .upload__block {
+    width: 275px;
+    margin: 0 20px 0 0;
+  }
+
+  .upload__btn {
+    border: none;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .upload__slide {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: -6px;
+  }
+
+  .upload__block {
+    width: 410px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .upload__btn {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
