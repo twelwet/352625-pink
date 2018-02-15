@@ -1,32 +1,47 @@
 .social {
   display: flex;
+  margin: 0 0 0 10px;
 }
 
 .social__btn {
-  display: block;
-  width: 41px;
-  height: 41px;
-  margin-right: 4px;
-  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin-right: 12px;
+  background-color: transparent;
   border: 3px solid #e9ebec;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    border: 3px solid @dark-blue;
+  }
+
+  &:active {
+    border: 3px solid #e9ebec;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
-.social__btn--tw {
-  background-image: url('../../img/icon-twitter.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+@media (min-width: @tablet-width) {
+
+  .social {
+    margin-top: 6px;
+    margin-left: 74px;
+  }
+
 }
 
-.social__btn--fb {
-  background-image: url('../../img/icon-facebook.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
+@media (min-width: @desktop-width) {
 
-.social__btn--yt {
-  background-image: url('../../img/icon-youtube.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  .social {
+    margin-top: 14px;
+    margin-left: 238px;
+  }
+
 }

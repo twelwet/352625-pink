@@ -1,13 +1,37 @@
 .map {
+  position: relative;
   height: 200px;
   background: url('../img/bg-map-mobile@1x.png') no-repeat left 0 bottom 0;
+}
+
+.map::before {
+  content: '';
+
+  position: absolute;
+
+  top: 0px;
+  left: 0px;
+
+  width: 0px;
+  height: 0px;
+
+  border-top: 32px solid #ffffff;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+
 }
 
 @media (min-width: @tablet-width) {
 
   .map {
     height: 375px;
-    background: url('../img/bg-map-tablet@1x.jpg') no-repeat left 0 bottom -150px;
+    background: url('../img/bg-map-tablet@1x.jpg') no-repeat left 0 bottom -125px;
+  }
+
+  .map::before {
+    border-top: 70px solid #ffffff;
+    border-left: 330px solid transparent;
+    border-right: 330px solid transparent;
   }
 
 }
@@ -15,8 +39,15 @@
 @media (min-width: @desktop-width) {
 
   .map {
+    margin-top: -14px;
     height: 500px;
-    background: url('../img/bg-map-desktop@1x.jpg') no-repeat left 0 bottom 0;
+    background: url('../img/bg-map-desktop@1x.jpg') no-repeat left 0 bottom -200px;
+  }
+
+  .map::before {
+    border-top: 105px solid #ffffff;
+    border-left: 600px solid transparent;
+    border-right: 600px solid transparent;
   }
 
 }

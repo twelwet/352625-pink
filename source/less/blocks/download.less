@@ -1,21 +1,22 @@
 .download {
-  position: relative;
-  margin-bottom: 193px;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  //height: 394px;
 }
 
 .download__title {
+  margin: 0;
+  padding: 0;
   display: none;
 }
 
 .download__wrapper {
-  position: absolute;
-  bottom: -193px;
-  left: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
   background-color: #1d2631;
 }
 
 .download__phrase {
+  margin: 18px 20px 11px 20px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -24,8 +25,11 @@
 }
 
 .download__list {
-  margin: 0;
+  display: flex;
+  margin: 33px 0 0 0;
   padding: 0;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .download__item {
@@ -33,42 +37,69 @@
   text-align: center;
 }
 
-@media (min-width: @tablet-width) {
-  .download {
-    margin-bottom: 0;
-  }
+.download__item:not(:last-child) {
+  margin-right: 38px;
+}
 
-  .download__wrapper {
-    position: static;
-    width: 300px;
-    background-color: transparent;
-  }
+.download__link {
+  font-size: 0;
+}
+
+@media (min-width: @tablet-width) {
 
   .download__title {
-    margin: 0;
-    padding: 0;
     display: block;
+    margin: 0;
+    padding: 87px 0 0 50px;
     width: 200px;
-    padding-top: 100px;
-    padding-left: 57px;
     text-align: center;
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-size: 40px;
+    line-height: 50px;
     font-weight: 300;
     color: #ffffff;
   }
 
+  .download__wrapper {
+    width: 300px;
+    margin-top: -350px;
+    margin-bottom: 113px;
+    padding: 0 320px 0 0;
+    background-color: transparent;
+  }
+
+  .download__list {
+    margin-top: 47px;
+  }
+
   .download__phrase {
     font-size: 18px;
+    margin: 30px 0 0 0;
   }
 
 }
 
 @media (min-width: @desktop-width) {
+
   .download__title {
     width: 240px;
-    padding-top: 200px;
-    padding-left: 35px;
+    padding-top: 220px;
+    padding-left: 30px;
     font-size: 50px;
+    line-height: 60px;
+  }
+
+  .download__wrapper {
+    margin-top: -401px;
+    margin-bottom: 150px;
+    padding: 0 640px 0 0;
+  }
+
+  .download__list {
+    margin-top: 68px;
+  }
+
+  .download__phrase {
+    margin-top: 50px;
   }
 }

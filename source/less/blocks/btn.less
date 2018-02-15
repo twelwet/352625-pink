@@ -1,10 +1,7 @@
 .btn {
-  width: 280px;
-  box-sizing: border-box;
   display: block;
-  margin: 0 auto;
-  padding-top: 12px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 14px;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -18,21 +15,113 @@
 .btn__download {
   color: #ffffff;
   border: 3px solid #ffffff;
+
+  &:hover {
+    color: @red;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: @light-red;
+  }
+}
+
+.btn__post,
+.btn__cancel {
+  padding-top: 13px;
+  padding-bottom: 16px;
 }
 
 .btn__post {
-  color: #d22856;
-  border: 3px solid #d22856;
+  margin: 38px 20px 0 20px;
+  color: @red;
+  border: 3px solid @red;
+
+  &:hover {
+    color: rgb(255, 255, 255);
+    background-color: @red;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .btn__cancel {
+  margin: 14px 20px 43px 20px;
   color: rgba(40, 54, 69, 0.1);
   background-color: #ffffff;
   border: 3px solid rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+  }
+}
+
+.btn__form-submit {
+  padding: 14px 45px 17px 48px;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    color: rgb(255, 255, 255);
+    background-color: #e5e5e5;
+    cursor: unset;
+  }
 }
 
 @media (min-width: @tablet-width) {
+
   .btn__download {
     width: auto;
+  }
+
+  .btn__post {
+    margin: 51px 12px 0 0;
+  }
+
+  .btn__cancel {
+    margin: 28px 12px 0 0;
+  }
+
+  .btn__form-submit {
+    padding: 17px 57px 17px 57px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .btn__download {
+    font-size: 21px;
+    line-height: 18px;
+  }
+
+  .btn__post {
+    margin: 0;
+    width: 176px;
+  }
+
+  .btn__cancel {
+    margin: 0;
+    width: 176px;
   }
 }

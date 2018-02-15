@@ -1,16 +1,51 @@
 .splay-wrapper {
+  position: relative;
   background-color: #f2f2f2;
   margin-left: -20px;
   margin-right: -20px;
+}
+
+.splay-wrapper:before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0px;
+
+  width: 0px;
+  height: 0px;
+
+  border-left: 160px solid #ffffff;
+  border-top: 15px solid #ffffff;
+  border-right: 160px solid #f2f2f2;
+  border-bottom: 15px solid #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+
+  .splay-wrapper:before {
+    border-left: 330px solid #ffffff;
+    border-top: 25px solid #ffffff;
+    border-right: 330px solid #f2f2f2;
+    border-bottom: 25px solid #f2f2f2;
+  }
 }
 
 @media (min-width: @desktop-width) {
 
   .splay-wrapper {
     margin-left: -130px;
-    margin-right: -130px;
+    margin-right: -132px;
     padding-left: 130px;
     padding-right: 130px;
   }
+
+  .splay-wrapper:before {
+    border-left: 600px solid #ffffff;
+    border-top: 40px solid #ffffff;
+    border-right: 600px solid #f2f2f2;
+    border-bottom: 40px solid #f2f2f2;
+  }
+
 
 }
