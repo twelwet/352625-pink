@@ -24,7 +24,9 @@
   fill: @opacity-white;
 }
 
-.page-header__logo-glasses {
+.page-header__logo-glasses,
+.page-header__logo-glasses--shine,
+.page-header__logo-stars {
   display: none;
 }
 
@@ -57,6 +59,15 @@
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .page-header__logo-glasses {
+    display: none;
+  }
+
+  .page-header__logo-glasses--shine,
+  .page-header__logo-stars {
+    display: block;
   }
 
 }
