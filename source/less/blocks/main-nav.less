@@ -21,7 +21,7 @@
   padding-top: 15px;
   padding-bottom: 16px;
   display: block;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
@@ -31,7 +31,6 @@
 }
 
 .main-nav__link[href] {
-
   &:hover {
     color: @red;
   }
@@ -39,7 +38,6 @@
   &:active {
     color: @light-red;
   }
-
 }
 
 .main-nav__toggle {
@@ -58,12 +56,12 @@
   border-radius: 0;
 }
 
-// JS включен, иконка 'бургера' - меню закрыто
+// JS включен, иконка "бургера" - меню закрыто
 .main-nav--closed .main-nav__toggle {
   width: 50px;
 
   &::before {
-    content: '';
+    content: "";
 
     position: absolute;
     top: 0;
@@ -87,13 +85,13 @@
   }
 }
 
-//JS включен, иконка 'крестика' - меню открыто
+//JS включен, иконка "крестика" - меню открыто
 .main-nav--opened .main-nav__toggle {
   width: 25px;
 
   &::before,
   &::after {
-    content: '';
+    content: "";
 
     position: absolute;
     top: -5px;
@@ -137,7 +135,6 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .main-nav {
     border: none;
   }
@@ -176,5 +173,4 @@
   .main-nav__toggle {
     display: none;
   }
-
 }

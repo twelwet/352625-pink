@@ -1,7 +1,3 @@
-.tools {
-
-}
-
 .tools__list {
   margin: 0;
   padding: 0;
@@ -30,7 +26,7 @@
   fill: #b5b9be;
 
   &:hover {
-    fill:  #8d949b;
+    fill: #8d949b;
   }
 
   &:active {
@@ -41,6 +37,7 @@
 .tools__svg--active {
   cursor: unset;
   fill: #d22856;
+
   &:hover,
   &:active {
     fill: #d22856;
@@ -56,11 +53,12 @@
 
 .tools__toggle::before {
   position: absolute;
-  content: '';
+  content: "";
   top: -5px;
   right: 38px;
   width: 9px;
-  height: 9px;  border-radius: 50%;
+  height: 9px;
+  border-radius: 50%;
   background-color: #ffffff;
   box-shadow: 0 0 0 2px @red;
   cursor: pointer;
@@ -76,9 +74,7 @@
   margin: 34px auto 0 auto;
 }
 
-
 @media (min-width: @tablet-width) {
-
   .tools__list {
     display: flex;
     flex-direction: column;
@@ -86,7 +82,7 @@
 
   .tools__item {
     position: relative;
-    margin: 0 0 16px 0px;
+    margin: 0 0 16px 0;
     height: 55px;
     border-bottom: 1px solid @gray;
   }
@@ -152,7 +148,6 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .tools__cut svg {
     width: 44px;
     height: 44px;
@@ -196,5 +191,4 @@
   .tools__contrast .tools__toggle::before {
     left: 162px;
   }
-
 }
