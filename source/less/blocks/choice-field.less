@@ -1,21 +1,20 @@
-.choice-field {
-
-}
-
 .choice-field__input {
   margin-left: 20px;
 }
 
 .choice-field__label {
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
 }
 
-.choice-field__input[type='checkbox'],
-.choice-field__input[type='radio'] {
+.choice-field__input[type="checkbox"] {
+  display: none;
+}
+
+.choice-field__input[type="radio"] {
   display: none;
 }
 
@@ -28,19 +27,19 @@
   cursor: default;
 }
 
-.choice-field__input[type='checkbox'] + .choice-field__label svg {
+.choice-field__input[type="checkbox"] + .choice-field__label svg {
   position: absolute;
   top: 4px;
   left: -59px;
   fill: transparent;
 }
 
-.choice-field__input[type='checkbox']:checked + .choice-field__label svg {
+.choice-field__input[type="checkbox"]:checked + .choice-field__label svg {
   fill: @red;
 }
 
-.choice-field__input[type='checkbox'] + .choice-field__label::before {
-  content: '';
+.choice-field__input[type="checkbox"] + .choice-field__label::before {
+  content: "";
   position: absolute;
   width: 34px;
   height: 34px;
@@ -50,8 +49,8 @@
   border-radius: 1px;
 }
 
-.choice-field__input[type='radio'] + .choice-field__label::before {
-  content: '';
+.choice-field__input[type="radio"] + .choice-field__label::before {
+  content: "";
   position: absolute;
   width: 34px;
   height: 34px;
@@ -64,7 +63,7 @@
   border-radius: 50%;
 }
 
-.choice-field__input[type='radio']:checked + .choice-field__label::before {
+.choice-field__input[type="radio"]:checked + .choice-field__label::before {
   box-shadow:
     inset 0 0 0 9px #ffffff,
     inset 0 0 0 17px @red;
@@ -80,15 +79,15 @@
 
 @media (min-width: @tablet-width) {
 
-  .choice-field__input[type='radio'] + .choice-field__label::before {
+  .choice-field__input[type="radio"] + .choice-field__label::before {
     left: -61px;
   }
 
-  .choice-field__input[type='checkbox'] + .choice-field__label::before {
+  .choice-field__input[type="checkbox"] + .choice-field__label::before {
     left: -59px;
   }
 
-  .choice-field__input[type='checkbox'] + .choice-field__label svg {
+  .choice-field__input[type="checkbox"] + .choice-field__label svg {
     left: -50px;
   }
 }
