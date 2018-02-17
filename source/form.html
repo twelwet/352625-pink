@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Конкурс</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="page-header container">
@@ -61,16 +62,16 @@
         <form class="form" action="https://echo.htmlacademy.ru">
           <fieldset class="form__item form__fieldset form__text-field--name text-field">
             <legend class="visually-hidden">Введите фамилию, имя, отчество</legend>
-            <ul class="form__list">
-              <li class="text-field__flex--baseline">
+            <ul class="form__list text-field__list">
+              <li class="text-field__item">
                 <label class="form__label" for="second-name">Фамилия:</label>
                 <input class="text-field__input text-field__input--stretch" type="text" name="second-name" id="second-name" placeholder="Укажите фамилию *" required>
               </li>
-              <li class="text-field__flex--baseline">
+              <li class="text-field__item">
                 <label class="form__label" for="first-name">Имя:</label>
                 <input class="text-field__input text-field__input--stretch" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
               </li>
-              <li class="text-field__flex--baseline">
+              <li class="text-field__item">
                 <label class="form__label" for="patronymic">Отчество:</label>
                 <input class="text-field__input text-field__input--stretch" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
               </li>
@@ -151,14 +152,14 @@
           </div>
           <fieldset class="form__item form__fieldset form__text-field--contacts text-field">
             <legend class="form__title visually-hidden">Контактная информация</legend>
-            <ul class="form__list text-field__flex">
-              <li class="text-field__flex--reverse">
+            <ul class="form__list text-field__list text-field__list--icons">
+              <li class="text-field__item text-field__item--icons">
                 <label class="form__label text-field__label-phone" for="telephone">Номер телефона</label>
-                <input class="text-field__input text-field__input--fix-width" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+                <input class="text-field__input text-field__input--icons" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
               </li>
-              <li class="text-field__flex--reverse">
+              <li class="text-field__item text-field__item--icons">
                 <label class="form__label text-field__label-mail" for="email">Адрес почты</label>
-                <input class="text-field__input text-field__input--fix-width" type="email" name="email" id="email" placeholder="Введите почту *" required>
+                <input class="text-field__input text-field__input--icons" type="email" name="email" id="email" placeholder="Введите почту *" required>
               </li>
             </ul>
           </fieldset>
@@ -183,7 +184,7 @@
           </div>
           <fieldset class="form__item form__fieldset form__textarea text-field">
             <legend class="form__title">Опишите свои эмоции</legend>
-            <textarea class="text-field__input text-field__input--fix-width" name="emotions" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="text-field__input text-field__input--area" name="emotions" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <footer class="form__item form__footer">
             <button class="btn btn__form-submit" type="submit">Отправить форму</button>

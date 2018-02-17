@@ -31,7 +31,7 @@
 
 .form__title,
 .form__label {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: @font-family;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
@@ -90,7 +90,7 @@
 
 .form__legend {
   margin-top: 32px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: @font-family;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -116,11 +116,12 @@
   }
 
   .form__item {
-    margin-bottom: 43px;
+    margin-bottom: 10px;
   }
 
   .form__title {
-    display: inline;
+    display: block;
+    margin: 0 auto;
   }
 
   .form__text-field--name {
@@ -152,7 +153,7 @@
   }
 
   .form__checkboxes legend {
-    width: unset;
+    width: 360px;
   }
 
   .form__checkboxes .form__list {
@@ -171,7 +172,8 @@
   }
 
   .form__footer {
-    margin-top: 25px;
+    margin-top: 56px;
+    margin-bottom: 40px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -189,12 +191,17 @@
 
   .form__text-field--name {
     width: 436px;
-    margin-right: 63px;
-    padding-top: 7px;
+    margin-right: 67px;
+    padding-top: 12px;
+    margin-bottom: 0;
   }
 
   .form__radios {
-    width: 440px;
+    width: 436px;
+  }
+
+  .form__radios ul {
+    margin-left: 75px;
   }
 
   .form__checkboxes,

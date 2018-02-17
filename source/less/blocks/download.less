@@ -1,18 +1,18 @@
+.download {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #1d2631;
+}
+
 .download__title {
   margin: 0;
   padding: 0;
   display: none;
 }
 
-.download__wrapper {
-  padding-top: 30px;
-  padding-bottom: 20px;
-  background-color: #1d2631;
-}
-
 .download__phrase {
   margin: 18px 20px 11px 20px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: @font-family;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -42,54 +42,52 @@
 }
 
 @media (min-width: @tablet-width) {
+  .download {
+    width: 300px;
+    margin-top: -530px;
+    margin-bottom: 113px;
+    padding: 0 320px 0 0;
+    background-color: transparent;
+  }
+
   .download__title {
     display: block;
-    margin: 0;
-    padding: 87px 0 0 50px;
+    margin: 0 0 28px 50px;
     width: 200px;
     text-align: center;
-    font-family: "Open Sans", "Arial", sans-serif;
+    font-family: @font-family;
     font-size: 40px;
     line-height: 50px;
     font-weight: 300;
     color: #ffffff;
   }
 
-  .download__wrapper {
-    width: 300px;
-    margin-top: -350px;
-    margin-bottom: 113px;
-    padding: 0 320px 0 0;
-    background-color: transparent;
-  }
-
   .download__list {
-    margin-top: 47px;
+    margin-top: 45px;
   }
 
   .download__phrase {
     font-size: 18px;
-    margin: 30px 0 0 0;
+    margin: 32px 0 0 0;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .download__title {
-    width: 240px;
-    padding-top: 220px;
-    padding-left: 30px;
-    font-size: 50px;
-    line-height: 60px;
-  }
-
-  .download__wrapper {
-    margin-top: -401px;
+  .download {
+    margin-top: -635px;
     margin-bottom: 150px;
     padding: 0 640px 0 0;
   }
 
+  .download__title {
+    width: 240px;
+    margin: 0 auto 53px auto;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
   .download__list {
-    margin-top: 68px;
+    margin-top: 65px;
   }
 
   .download__phrase {
