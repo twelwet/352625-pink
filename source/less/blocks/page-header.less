@@ -1,10 +1,30 @@
 .page-header {
-  background-color: #283645;
-  padding-top: 21px;
+  position: relative;
+}
+
+.page-header__wrapper {
+  width: 280px;
+  padding: 21px 20px 0 20px;
+}
+
+//Меню навигации закрыто:
+.page-header__wrapper--absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+//JS выключен, меню навигации открыто:
+.page-header__wrapper--relative {
+  width: initial;
+  margin-left: -20px;
+  margin-right: -20px;
+  background-color: @dark-blue;
 }
 
 .page-header__link {
-  display: block;
+  display: inline-block;
   padding: 0;
   margin: 0 0 26px 0;
   width: 75px;
@@ -31,8 +51,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header {
-    padding-top: 25px;
+  .page-header__wrapper {
+    width: 620px;
+    padding: 25px 20px 0 20px;
   }
 
   .page-header__link {
@@ -51,9 +72,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header {
-    position: relative;
+  .page-header__wrapper {
+    width: 940px;
+    margin-left: -130px;
+    margin-right: -130px;
+    padding: 25px 130px 0 130px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.3);
   }

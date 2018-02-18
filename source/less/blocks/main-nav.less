@@ -1,3 +1,26 @@
+/*
+Логика открытия/закрытия меню навигации:
+-----
+1. JS включен, меню открыто:
+- добавляем блоку ".main-nav" класс ".main-nav--opened";
+- удаляем у блока ".main-nav" класс ".main-nav--closed";
+- добавляем блоку ".page-header__wrapper" класс ".page-header__wrapper--absolute";
+- удаляем у блока ".page-header__wrapper" класс ".page-header__wrapper--relative".
+-----
+2. JS включен, меню закрыто:
+- добавляем блоку ".main-nav" класс ".main-nav--closed";
+- удаляем у блока ".main-nav" класс ".main-nav--opened";
+- добавляем блоку ".page-header__wrapper" класс ".page-header__wrapper--relative";
+- удаляем у блока ".page-header__wrapper" класс ".page-header__wrapper--absolute".
+-----
+3. JS выключен, меню открыто:
+- удаляем у блока ".main-nav" класс ".main-nav--opened";
+- удаляем у блока ".main-nav" класс ".main-nav--closed";
+- добавляем блоку ".main-nav" класс ".main-nav--no-js";
+- добавляем блоку ".page-header__wrapper" класс ".page-header__wrapper--relative";
+- удаляем у блока ".page-header__wrapper" класс ".page-header__wrapper--absolute".
+-----
+*/
 .main-nav {
   position: relative;
   margin-left: -20px;
@@ -56,7 +79,14 @@
   border-radius: 0;
 }
 
-// JS включен, иконка "бургера" - меню закрыто
+.main-nav--closed {
+  border: none;
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
 .main-nav--closed .main-nav__toggle {
   width: 50px;
 
@@ -85,7 +115,7 @@
   }
 }
 
-//JS включен, иконка "крестика" - меню открыто
+
 .main-nav--opened .main-nav__toggle {
   width: 25px;
 
