@@ -2,7 +2,7 @@
   display: block;
   padding-top: 13px;
   padding-bottom: 14px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: @font-family;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -15,6 +15,8 @@
 .btn__download {
   color: #ffffff;
   border: 3px solid #ffffff;
+  width: 280px;
+  margin: 0 auto;
 
   &:hover {
     color: @red;
@@ -50,7 +52,7 @@
 .btn__cancel {
   margin: 14px 20px 43px 20px;
   color: rgba(40, 54, 69, 0.1);
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   border: 3px solid rgba(40, 54, 69, 0.1);
 
   &:hover {
@@ -61,7 +63,7 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: rgba(40, 54, 69, 0.3);
-    border: 3px solid rgba(40, 54, 69, 0.3);
+    border: 3px solid #b5b9be;
   }
 }
 
@@ -92,6 +94,8 @@
 @media (min-width: @tablet-width) {
   .btn__download {
     width: auto;
+    padding-top: 13px;
+    padding-bottom: 17px;
   }
 
   .btn__post {

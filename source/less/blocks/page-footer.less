@@ -8,6 +8,10 @@
   justify-content: space-between;
 }
 
+.page-footer__main-page {
+  display: none;
+}
+
 .page-footer__link[href]:hover .page-footer__logo-pink {
   fill: @red;
 }
@@ -31,27 +35,12 @@
     display: flex;
     flex-direction: row;
   }
-
-  .page-footer__main-page {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 40px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
     margin-top: 0;
     padding-top: 16px;
-  }
-
-  .page-footer__main-page {
-    height: 100px;
-    padding-top: 43px;
-    justify-content: flex-start;
   }
 
   .page-footer__logo-glasses {

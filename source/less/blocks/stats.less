@@ -3,7 +3,7 @@
     position: relative;
     padding-top: 50px;
     display: block;
-    font-family: "Open Sans", "Arial", sans-serif;
+    font-family: @font-family;
   }
 
   .stats::before {
@@ -75,11 +75,24 @@
       color: @medium-gray;
     }
   }
+
+  .stats__timer-value {
+    position: absolute;
+    top: 136px;
+    left: 83px;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 150px;
+    color: @red;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .stats {
+    padding-left: 130px;
+    padding-right: 130px;
     padding-bottom: 11px;
+    background-color: #f2f2f2;
   }
 
   .stats::before {
@@ -129,5 +142,12 @@
   .stats__link {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .stats__timer-value {
+    top: 160px;
+    left: 210px;
+    font-size: 120px;
+    line-height: 187px;
   }
 }
