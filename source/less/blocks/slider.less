@@ -97,7 +97,7 @@
   }
 
   .slider__toggles {
-    width: 1860px;
+    width: 940px;
     justify-content: space-between;
     bottom: 168px;
     left: -6px;
@@ -128,6 +128,10 @@
     }
   }
 
+  .slider__toggle:nth-child(3) {
+    display: none;
+  }
+
   .slider__toggle::before,
   .slider__toggle::after {
     position: absolute;
@@ -156,11 +160,6 @@
   .slider__toggle:nth-child(1)::after {
     transform: rotate(-42deg);
     top: 9px;
-  }
-
-  .slider__toggle:nth-child(3)::after,
-  .slider__toggle:nth-child(3)::before {
-    left: -925px;
   }
 
   .slider__radio-1:checked ~ .slider__toggles label[for="comments__btn-1"],
