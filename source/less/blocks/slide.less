@@ -20,7 +20,6 @@
   padding: 6px 20px 6px 20px;
   top: 0;
   right: 0;
-  font-family: @font-family;
   font-weight: 700;
   font-size: 12px;
   line-height: 24px;
@@ -31,11 +30,13 @@
 }
 
 .slide__text-content {
-  padding: 15px 5px 52px 18px;
+  padding: 15px 5px 17px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .slide__username {
-  font-family: @font-family;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
@@ -44,7 +45,6 @@
 }
 
 .slide__upload-time {
-  font-family: @font-family;
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
@@ -56,7 +56,6 @@
 .slide__description {
   margin: 0;
   padding: 0;
-  font-family: @font-family;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -65,10 +64,8 @@
 }
 
 .slide__heart {
-  position: absolute;
-  bottom: 19px;
-  left: 49px;
-  font-family: @font-family;
+  position: relative;
+  padding: 10px 0 0 30px;
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
@@ -81,7 +78,7 @@
   position: absolute;
   content: "";
   bottom: 6px;
-  left: -31px;
+  left: 0;
   width: 13px;
   height: 13px;
   background: url("../img/icon-heart.svg") no-repeat 0 0;
@@ -106,35 +103,39 @@
   }
 
   .slide__text-content {
-    padding: 24px 10px 56px 27px;
-    min-height: 74px;
+    padding: 24px 10px 24px 27px;
+    min-height: 107px;
+    justify-content: space-between;
   }
 
   .slide-panorama__text-content {
-    padding: 25px 5px 25px 27px;
-    height: unset;
+    position: relative;
+    padding: 25px 5px 22px 27px;
+    min-height: unset;
   }
 
   .slide__heart {
-    bottom: 22px;
-    left: 28px;
+    padding: 0;
   }
 
   .slide__heart::before {
-    top: 6px;
-    left: 227px;
+    bottom: unset;
+    left: unset;
+    top: 9px;
+    right: 23px;
   }
 
   .slide__heart--panorama {
-    bottom: unset;
-    left: unset;
-    top: 535px;
-    right: 60px;
+    position: absolute;
+    top: 25px;
+    right: 58px;
   }
 
   .slide__heart--panorama::before {
-    bottom: 6px;
-    left: 105px;
+    bottom: unset;
+    left: unset;
+    top: 5px;
+    right: -30px;
   }
 }
 
@@ -149,11 +150,6 @@
     margin-right: -130px;
     width: 1200px;
     height: 506px;
-  }
-
-  .slide__heart--panorama {
-    top: 530px;
-    right: 60px;
   }
 
   .slide__label {

@@ -25,24 +25,16 @@
   border-right: 160px solid transparent;
 }
 
-.map::after {
-  content: "";
-  position: absolute;
-  top: 97px;
-  left: 142px;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: @red;
-  box-shadow: inset 0 0 0 10px #ffffff;
-  cursor: pointer;
-}
-
 @media (min-width: @tablet-width) {
   .map {
     height: 375px;
     background: url("../img/bg-map-tablet@1x.jpg") no-repeat left -20px bottom -125px;
     margin-bottom: -13px;
+  }
+
+  .map iframe {
+    width: 660px;
+    height: 375px;
   }
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -57,11 +49,6 @@
     border-left: 330px solid transparent;
     border-right: 330px solid transparent;
   }
-
-  .map::after {
-    top: 192px;
-    left: 312px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -71,6 +58,11 @@
     margin: -14px -130px 45px -130px;
     height: 500px;
     background: url("../img/bg-map-desktop@1x.jpg") no-repeat left 0 bottom -200px;
+  }
+
+  .map iframe {
+    width: 960px;
+    height: 500px;
   }
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -84,10 +76,5 @@
     border-top: 105px solid #ffffff;
     border-left: 600px solid transparent;
     border-right: 600px solid transparent;
-  }
-
-  .map::after {
-    top: 262px;
-    left: 582px;
   }
 }

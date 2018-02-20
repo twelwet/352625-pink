@@ -1,0 +1,123 @@
+.modal {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: 0 -20px 0 -20px;
+  padding: 45px 20px 0 20px;
+  position: fixed;
+  z-index: 10;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    width: 460px;
+    margin: 0 80px 0 80px;
+    padding: 45px 0 0 0;
+    border-radius: 4px;
+  }
+}
+
+.modal__upload-success {
+  top: 600px;
+  border-bottom: 163px solid #f2f2f2;
+}
+
+@media (min-width: @desktop-width) {
+  .modal__upload-success {
+    width: 780px;
+  }
+}
+
+.modal__upload-failure {
+  top: 50px;
+}
+
+@media (min-width: @desktop-width) {
+  .modal__upload-failure {
+    margin: 0 220px 0 240px;
+  }
+}
+
+.modal__title {
+  margin: 0 0 27px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .modal__title {
+    width: 250px;
+    margin: 0 0 23px 0;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal__upload-success .modal__title {
+    width: initial;
+  }
+}
+
+.modal__description {
+  margin: 0 0 80px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: @dark-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .modal__description {
+    width: 320px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal__upload-success .modal__description {
+    width: 400px;
+    margin: 0 0 88px 0;
+  }
+}
+
+.modal__close {
+  padding: 14px 65px 17px 68px;
+  margin-bottom: -110px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal__close {
+    padding: 14px 75px 17px 78px;
+  }
+}
+
+.modal__upload-failure .modal__description {
+  margin: 0 0 40px 0;
+}
+
+.modal__upload-failure .modal__close {
+  margin-bottom: 40px;
+  padding: 14px 123px 17px 130px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal__upload-failure .modal__close {
+    padding: 14px 133px 17px 140px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal__upload-success .modal__close {
+    padding: 14px 157px 17px 155px;
+  }
+}
