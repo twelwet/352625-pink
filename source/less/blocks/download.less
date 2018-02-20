@@ -44,10 +44,16 @@
 
 @media (min-width: @tablet-width) {
   .download {
-    width: 300px;
-    margin: -530px 0 113px 0;
-    padding: 0 320px 0 0;
+    position: relative;
+    width: 320px;
     background-color: transparent;
+    padding: 0;
+  }
+
+  .download__wrapper {
+    position: absolute;
+    top: -527px;
+    left: 20px;
   }
 
   .download__title {
@@ -72,10 +78,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  .download {
-    margin-top: -635px;
-    margin-bottom: 150px;
-    padding: 0 640px 0 0;
+  .download__wrapper {
+    top: -635px;
+    left: 20px;
   }
 
   .download__title {
