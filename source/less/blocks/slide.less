@@ -1,5 +1,4 @@
-.slide-panorama,
-.slide {
+.slide-panorama {
   position: relative;
 }
 
@@ -30,7 +29,7 @@
 }
 
 .slide__text-content {
-  padding: 15px 5px 17px 18px;
+  padding: 15px 5px 19px 18px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -65,7 +64,7 @@
 
 .slide__heart {
   position: relative;
-  padding: 10px 0 0 30px;
+  padding: 8px 0 0 30px;
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
@@ -77,7 +76,7 @@
 .slide__heart::before {
   position: absolute;
   content: "";
-  bottom: 6px;
+  top: 11px;
   left: 0;
   width: 13px;
   height: 13px;
@@ -102,16 +101,31 @@
     top: 59px;
   }
 
+  .slide__flex-wrapper {
+    display: flex;
+    flex-grow: 1;
+  }
+
   .slide__text-content {
+    width: 263px;
     padding: 24px 10px 24px 27px;
     min-height: 107px;
-    justify-content: space-between;
+  }
+
+  .slide__description {
+    flex-grow: 1;
   }
 
   .slide-panorama__text-content {
-    position: relative;
+    width: 588px;
     padding: 25px 5px 22px 27px;
-    min-height: unset;
+    min-height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .slide-panorama__text-content .slide__block {
+    order: -2;
   }
 
   .slide__heart {
@@ -119,21 +133,18 @@
   }
 
   .slide__heart::before {
-    bottom: unset;
-    left: unset;
-    top: 9px;
-    right: 23px;
+    top: 6px;
+    left: 228px;
   }
 
   .slide__heart--panorama {
-    position: absolute;
-    top: 25px;
-    right: 58px;
+    margin: 0 0 0 305px;
+    order: -1;
   }
 
   .slide__heart--panorama::before {
-    bottom: unset;
-    left: unset;
+    bottom: auto;
+    left: auto;
     top: 5px;
     right: -30px;
   }
@@ -145,10 +156,18 @@
     height: 400px;
   }
 
-  .slide-panorama img {
+  .slide-panorama a {
+    display: block;
+    width: 960px;
+    height: 506px;
     margin-left: -10px;
     margin-right: -10px;
-    width: 960px;
+  }
+
+  .slide-panorama img {
+    margin-right: -120px;
+    margin-left: -120px;
+    width: 1200px;
     height: 506px;
   }
 
@@ -157,7 +176,11 @@
   }
 
   .slide-panorama__text-content {
+    width: 888px;
     padding: 23px 5px 25px 27px;
-    min-height: unset;
+  }
+
+  .slide__heart--panorama {
+    margin: 0 0 0 621px;
   }
 }

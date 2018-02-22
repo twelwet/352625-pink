@@ -4,7 +4,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .photos {
+  .photos__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,6 +13,8 @@
 
   .photos__slide {
     width: 300px;
+    display: flex;
+    flex-direction: column;
   }
 
   .photos__slide-panorama {
@@ -22,6 +24,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .photos__wrapper {
+    padding: 0 130px;
+    margin: 0 auto;
+  }
+
   .photos__slide {
     margin-bottom: 55px;
   }
